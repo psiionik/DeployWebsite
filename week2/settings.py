@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "brandenswebsite")
 # DEBUG = True
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
-ALLOWED_HOSTS = ["apiservice", os.environ.get(
+ALLOWED_HOSTS = ["apiservice", "35.153.177.164", os.environ.get(
     "DJANGO_ALLOWED_HOSTS", "localhost 127.0.0.1 [::1]"
 ).split(" ")]
 
